@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        System.out.println(play(readFile("/Users/jchen/IdeaProjects/poker-hand-sorter/src/resources/poker-hands.txt")));
+        System.out.println(play(readFile(args[0])));
     }
 
     private static String readFile(String path) throws IOException {
@@ -32,7 +32,7 @@ public class Main {
             } else {
                 p2++;
             }
-            System.out.println(line+" - "+result + "  -  "+h1.getCombination().name() +"  -  "+h2.getCombination().name());
+//            System.out.println(line+" - "+result + "  -  "+h1.getCombination().name() +"  -  "+h2.getCombination().name());
         }
 
         return "Player 1: "+p1+"\nPlayer 2: "+p2;

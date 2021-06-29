@@ -23,7 +23,7 @@ public class Card {
                 this.value = 13;
                 break;
             default:
-                this.value = (int) s.toLowerCase().charAt(0);
+                this.value = Character.getNumericValue(s.toLowerCase().charAt(0));
         }
 
         this.suit = String.valueOf(s.toUpperCase().charAt(1));
